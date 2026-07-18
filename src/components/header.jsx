@@ -81,7 +81,7 @@ export function Header() {
           id="nav-menu"
           aria-label="Primary"
           className={cn(
-            "fixed inset-y-0 right-0 z-[720] w-[min(320px,82vw)] overflow-y-auto border-l border-slate-200 bg-white p-6 pt-24 shadow-2xl transition-transform duration-500 dark:border-slate-800 dark:bg-[#0f172a] lg:static lg:z-auto lg:w-auto lg:translate-x-0 lg:border-0 lg:bg-transparent lg:p-0 lg:shadow-none lg:transition-none lg:dark:bg-transparent",
+            "fixed inset-y-0 right-0 z-[720] w-[min(320px,82vw)]  border-l border-slate-200 bg-white p-6 pt-24 shadow-2xl transition-transform duration-500 dark:border-slate-800 dark:bg-[#0f172a] lg:static lg:z-auto lg:w-auto lg:translate-x-0 lg:border-0 lg:bg-transparent lg:p-0 lg:shadow-none lg:transition-none lg:dark:bg-transparent",
             isOpen ? "translate-x-0" : "translate-x-full lg:translate-x-0"
           )}
         >
