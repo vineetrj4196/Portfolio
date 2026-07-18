@@ -128,9 +128,9 @@ export const projects = [
     description:
       "Architected a comprehensive, enterprise-grade HRMS covering employee management, attendance tracking, leave management, payroll processing and performance evaluation. Built the Payroll Employee Web App for payslips, payroll data and salary history, and the Recruiter Module for end-to-end hiring workflows — job postings, applicant tracking, interview scheduling and onboarding. Implemented role-based dashboards for HR admins and employees with secure, permission-driven access, using Next.js for SSR and performance, and Redux for state management across complex multi-module workflows. All CRUD operations run over RESTful APIs, deployed on AWS Amplify via CI/CD pipelines.",
     tags: ["React.js", "Next.js", "Redux", "Tailwind CSS", "REST APIs", "AWS Amplify"],
-    image: "/assets/images/projects/project-1.jpg",
-    width: 512,
-    height: 512,
+    image: "/assets/images/projects/project-hrms.svg",
+    width: 900,
+    height: 600,
     link: "#",
   },
   {
@@ -141,9 +141,9 @@ export const projects = [
     description:
       "Full-featured admin dashboard for the Zunoy platform, enabling administrators to manage products, users, subscriptions and platform configurations. Implemented alert and notification management for composing, scheduling and broadcasting updates to end users, plus data visualization dashboards with real-time analytics for platform usage, user activity and business KPIs. Designed role-based access control (RBAC) so admin actions and sensitive data stay restricted to authorized users, with RESTful APIs syncing the admin panel and backend services.",
     tags: ["React.js", "Tailwind CSS", "REST APIs", "RBAC"],
-    image: "/assets/images/projects/project-2.jpg",
-    width: 866,
-    height: 650,
+    image: "/assets/images/projects/project-zunoy-admin.svg",
+    width: 900,
+    height: 600,
     link: "#",
   },
   {
@@ -154,9 +154,9 @@ export const projects = [
     description:
       "High-performance, responsive SaaS website built with Vanilla JavaScript and Tailwind CSS, without a frontend framework. Unified 6 core Zunoy products into a single, cohesive business ecosystem with a seamless user journey. Applied UTM tracking, cookie consent management and user behavior analytics for accurate marketing attribution and data compliance, with mobile-first design, WCAG accessibility and on-page SEO across all pages.",
     tags: ["Vanilla JavaScript", "Tailwind CSS", "REST APIs", "SEO"],
-    image: "/assets/images/projects/project-3.jpg",
+    image: "/assets/images/projects/project-zunoy-saas.svg",
     width: 900,
-    height: 451,
+    height: 600,
     link: "#",
   },
   {
@@ -168,9 +168,9 @@ export const projects = [
       "Client project at Perisync Technologies: an admin portal built for Interior Arc, an interior design/architecture business. The portal lets admins manage content and add the project images shown to client-facing users, keeping the public-facing gallery up to date without touching code. Built with React.js, Next.js and Tailwind CSS as part of a feature-rich, responsive client-facing deployment using Git for version control and CI/CD pipelines for automated build and deployment.",
     tags: ["React.js", "Next.js", "Tailwind CSS", "REST APIs"],
     // TODO: swap in a real screenshot and live link once available.
-    image: "/assets/images/projects/project-4.jpg",
+    image: "/assets/images/projects/project-interior-arc.svg",
     width: 900,
-    height: 451,
+    height: 600,
     link: "#",
   },
 ];

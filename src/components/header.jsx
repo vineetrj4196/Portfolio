@@ -57,10 +57,15 @@ export function Header() {
   return (
     <header
       className={cn(
-        "fixed inset-x-0 top-0 z-[700] flex h-17 items-center bg-white/80 backdrop-blur-lg transition-shadow dark:bg-[#0a0f1e]/75",
+        "fixed inset-x-0 top-0 z-[700] flex h-17 items-center transition-shadow",
         isScrolled && "border-b border-slate-200 shadow-sm dark:border-slate-800"
       )}
     >
+      {/* Separate layer for the blur/background: keeping backdrop-filter off the
+          <header> itself avoids it becoming a containing block for the fixed-
+          positioned mobile nav/overlay below (backdrop-filter, like transform,
+          creates a new containing block for fixed descendants per spec). */}
+      <div aria-hidden="true" className="absolute inset-0 -z-10 bg-white/80 backdrop-blur-lg dark:bg-[#0a0f1e]/75" />
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-4 px-5">
         <Link href="/#home" className="flex items-center gap-2 text-base font-bold">
           <span className="grid h-9 w-9 place-items-center rounded-lg bg-gradient-brand text-white">V</span>
@@ -121,7 +126,7 @@ export function Header() {
             aria-label="Toggle navigation menu"
             aria-expanded={isOpen}
             aria-controls="nav-menu"
-            className="grid h-10 w-10 place-items-center rounded-lg border border-slate-200 bg-slate-100 dark:border-slate-700 dark:bg-slate-800 lg:hidden"
+            className="relative z-[730] grid h-10 w-10 place-items-center rounded-lg border border-slate-200 bg-slate-100 dark:border-slate-700 dark:bg-slate-800 lg:hidden"
           >
             {isOpen ? <X className="h-[1.1rem] w-[1.1rem]" aria-hidden="true" /> : <Menu className="h-[1.1rem] w-[1.1rem]" aria-hidden="true" />}
           </button>
