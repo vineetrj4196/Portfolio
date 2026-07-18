@@ -9,7 +9,7 @@ import { siteConfig } from "@/lib/site-data";
 export const metadata = {
   title: "About",
   description:
-    "Learn more about Vineet R J — background, experience, education and certifications of a Frontend Developer skilled in React.js, Next.js, Redux and Tailwind CSS.",
+    "Learn more about Vineet R J — background,experience, education and certifications of a Frontend Developer skilled in React.js, Next.js, Redux and Tailwind CSS.",
   alternates: { canonical: "/about" },
   openGraph: {
     type: "profile",
